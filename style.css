@@ -1,0 +1,118 @@
+/* Genel Ayarlar */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Inter', sans-serif;
+    background-color: #f4f7f6;
+    color: #333;
+    line-height: 1.6;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    padding: 20px;
+}
+
+/* Konteyner (Ortalanmış İçerik) */
+.container {
+    background-color: #ffffff;
+    max-width: 600px;
+    width: 100%;
+    border-radius: 12px;
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.08);
+    overflow: hidden;
+    padding: 40px;
+    transition: transform 0.3s ease;
+}
+
+.container:hover {
+    transform: translateY(-5px);
+}
+
+/* Başlık Bölümü */
+header {
+    text-align: center;
+    margin-bottom: 30px;
+    border-bottom: 2px solid #f0f0f0;
+    padding-bottom: 20px;
+}
+
+header h1 {
+    font-size: 2rem;
+    color: #2c3e50;
+    margin-bottom: 5px;
+    font-weight: 600;
+}
+
+.subtitle {
+    font-size: 1rem;
+    color: #7f8c8d;
+    font-weight: 300;
+}
+
+/* Kart (Gölgeli Kutular) Tasarımı */
+.card {
+    background-color: #fcfcfc;
+    border: 1px solid #eaeaea;
+    border-radius: 8px;
+    padding: 20px;
+    margin-bottom: 20px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.02);
+}
+
+.card h2 {
+    font-size: 1.2rem;
+    color: #34495e;
+    margin-bottom: 10px;
+    border-left: 4px solid #3498db;
+    padding-left: 10px;
+}
+
+.card p {
+    color: #555;
+    font-size: 0.95rem;
+}
+
+/* İletişim Linkleri */
+.contact-links {
+    list-style-type: none;
+}
+
+.contact-links li {
+    margin-bottom: 8px;
+    font-size: 0.95rem;
+}
+
+.contact-links a {
+    color: #3498db;
+    text-decoration: none;
+    transition: color 0.2s ease;
+}
+
+.contact-links a:hover {
+    color: #2980b9;
+    text-decoration: underline;
+}
+
+/* Alt Bilgi */
+footer {
+    text-align: center;
+    margin-top: 30px;
+    font-size: 0.8rem;
+    color: #95a5a6;
+}
+
+/* Mobil Uyumluluk */
+@media (max-width: 480px) {
+    .container {
+        padding: 20px;
+    }
+
+    header h1 {
+        font-size: 1.6rem;
+    }
+}
